@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tipografía Popular 2025 — Violet Pulse</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&family=Merriweather&family=Manrope:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --clr-bg-lightest: #EBD9FF;
+      --clr-ui-primary: #7700F0;
+      --clr-ui-footer: #4A00A0;
+      --clr-text-base: #1a1a1a;
+    }
+
+    h2 {
+      /* font-family: montserrat; */
+      /* font-size: 2rem; */
+    }
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--clr-bg-lightest);
+      color: var(--clr-text-base);
+      font-family: 'Roboto', sans-serif; /* Base */
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--clr-ui-primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .title-section h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle-section h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      color: var(--clr-ui-footer);
+      margin-top: 2rem;
+    }
+
+    .content-section p {
+      font-family: 'Merriweather', serif;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+
+    .ui-section {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1rem;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .doc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    .doc-table th,
+    .doc-table td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .doc-table thead {
+      background-color: var(--clr-ui-footer);
+      color: var(--clr-bg-lightest);
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="title-section">
+    <h1>Violet Pulse <small>(Montserrat)</small> 3rem, 700</h1>
+    <h2 > Montserrat: 3rem, 600</h2>
+    <p>Tipografía popular en diseño web — 2025</p>
+  </header>
+
+  <section class="subtitle-section">
+    <h2>Subtítulo con Inter <small>(Inter)</small></h2>
+  </section>
+
+  <section class="content-section">
+    <p>
+      Este párrafo usa <strong>Merriweather</strong> <em>(Merriweather)</em>, ideal para contenido editorial, documentación técnica y bloques de texto extensos. Su estilo serif aporta elegancia, legibilidad y ritmo visual.
+    </p>
+    <p>
+      La fuente <strong>Inter</strong> <em>(Inter)</em> se aplica en subtítulos, navegación y microcopy. Es moderna, versátil y altamente legible en interfaces.
+    </p>
+    <p>
+      <strong>Montserrat</strong> <em>(Montserrat)</em> se usa para titulares, botones grandes y branding. Su estilo geométrico y compacto transmite fuerza visual sin perder elegancia.
+    </p>
+  </section>
+
+  <section class="ui-section">
+    <strong>Ejemplo de UI con Manrope <small>(Manrope)</small></strong>
+    <p>Este bloque simula una tarjeta de interfaz usando la fuente <strong>Manrope</strong>, ideal para dashboards, formularios y componentes técnicos.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>📋 Tabla de fuentes utilizadas</h2>
+    <table class="doc-table">
+      <thead>
+        <tr>
+          <th>Variable SCSS</th>
+          <th>Fuente</th>
+          <th>Aplicación</th>
+          <th>Estilo clave</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>$font-title</code></td>
+          <td>Montserrat</td>
+          <td>Titulares, branding, botones grandes</td>
+          <td>Sans-serif geométrica, fuerte y elegante</td>
+        </tr>
+        <tr>
+          <td><code>$font-subtitle</code></td>
+          <td>Inter</td>
+          <td>Subtítulos, navegación, UI</td>
+          <td>Sans-serif moderna, versátil</td>
+        </tr>
+        <tr>
+          <td><code>$font-content</code></td>
+          <td>Merriweather</td>
+          <td>Contenido editorial, párrafos largos</td>
+          <td>Serif legible, elegante, técnica</td>
+        </tr>
+        <tr>
+          <td><code>$font-ui</code></td>
+          <td>Manrope</td>
+          <td>Componentes UI, formularios, dashboards</td>
+          <td>Sans-serif técnica, minimalista</td>
+        </tr>
+        <tr>
+          <td><code>$font-base</code></td>
+          <td>Roboto</td>
+          <td>Texto general, compatibilidad móvil</td>
+          <td>Sans-serif neutra, confiable</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Violet Pulse — Tipografía modular para sistemas de diseño <small>(Roboto)</small></p>
+  </footer>
+
+</body>
+</html>
