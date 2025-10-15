@@ -20,6 +20,79 @@ Las fuentes fueron seleccionadas por su popularidad en diseño web (2025), versa
 
 ---
 
+## 🧩 Variables SCSS
+```
+// Tipografía modular — Violet Pulse
+
+$font-title: 'Montserrat', sans-serif;
+$font-subtitle: 'Inter', sans-serif;
+$font-content: 'Merriweather', serif;
+$font-ui: 'Manrope', sans-serif;
+$font-base: 'Roboto', sans-serif;
+
+```
+
+## 🧰 Mixins recomendados
+
+```
+@mixin font-title {
+  font-family: $font-title;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@mixin font-subtitle {
+  font-family: $font-subtitle;
+  font-weight: 600;
+}
+
+@mixin font-content {
+  font-family: $font-content;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@mixin font-ui {
+  font-family: $font-ui;
+  font-weight: 400;
+}
+
+@mixin font-base {
+  font-family: $font-base;
+  font-weight: 400;
+}
+
+
+```
+
+## 🧪 Ejemplos de uso
+
+```
+h1, .title {
+  @include font-title;
+}
+
+h2, h3, .subtitle {
+  @include font-subtitle;
+}
+
+p, .content {
+  @include font-content;
+}
+
+.card, .form-label {
+  @include font-ui;
+}
+
+body {
+  @include font-base;
+}
+
+```
+
+
+
 ## 📦 Instalación
 
 ### Opción 1: Google Fonts (en línea)
@@ -106,3 +179,5 @@ font-size: clamp(1rem, 2vw + 0.5rem, 2rem);
 ```
 - Aplica font-display: swap para mejorar rendimiento
 - Mantén jerarquía visual con una escala modular (1.125 o 1.25)
+
+
